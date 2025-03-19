@@ -9,6 +9,11 @@ namespace modul5_103022300084
 {
     internal class PemrosesData
     {
+
+        /*private T data;
+        private dynamic temp;*/
+
+
         public void DapatkanNilaiTerbesar<T>(T data1, T data2, T data3)
         {
             dynamic temp1 = data1;
@@ -27,6 +32,7 @@ namespace modul5_103022300084
             {
                 temp1 = data3; 
             }
+
 
             Console.WriteLine("Nilai terbesar: "+temp1);
         }
@@ -55,4 +61,11 @@ namespace modul5_103022300084
             }
         }
     }
+
+            Console.WriteLine(temp1);
+        }
+    }
+
+    
+
 }

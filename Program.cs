@@ -6,6 +6,7 @@ class Program
     {
         PemrosesData data = new PemrosesData();
         data.DapatkanNilaiTerbesar(1030, 2230, 0084);
+
         
         SimpleDataBase<int> db = new SimpleDataBase<int>();
         db.AddNewData(1030);
@@ -15,5 +16,6 @@ class Program
 
         SimpleDataBase<String> dataString = new SimpleDataBase<String>();
         dataString.PrintAllData();
+
     }
 }
