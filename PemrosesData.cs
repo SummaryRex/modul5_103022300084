@@ -9,8 +9,10 @@ namespace modul5_103022300084
 {
     internal class PemrosesData
     {
+
         /*private T data;
         private dynamic temp;*/
+
 
         public void DapatkanNilaiTerbesar<T>(T data1, T data2, T data3)
         {
@@ -31,9 +33,39 @@ namespace modul5_103022300084
                 temp1 = data3; 
             }
 
+
+            Console.WriteLine("Nilai terbesar: "+temp1);
+        }
+    }
+
+
+    internal class SimpleDataBase<T>
+    {
+        private List<T> storedData;
+        private List<DateTime> inputDates;
+
+        public SimpleDataBase()
+        {
+            storedData = new List<T>();
+        }
+        public void AddNewData(T data) 
+        { 
+            storedData.Add(data);
+            inputDates.Add(DateTime.Now);
+        }
+        public void PrintAllData() {
+            for (int i = 0; i < storedData.Count; i++) 
+            {
+                Console.WriteLine("Data " + i + " berisi: " + storedData[i] +
+                    ", yang disimpang pada waktu UTC: " + inputDates[i]);    
+            }
+        }
+    }
+
             Console.WriteLine(temp1);
         }
     }
 
     
+
 }
